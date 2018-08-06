@@ -42,17 +42,31 @@ EOL;
   menu();
 }
 
+function upd() {
+  logo();
+  echo "\n\033[01;32mUpdating IP-Tracer.........\033[01;37m\n\n";
+  sleep(1);
+  system("cd ~/ && git clone https://github.com/Rajkumrdusad/IP-Tracer.git");
+  system("cd ~/ && sudo git clone https://github.com/Rajkumrdusad/IP-Tracer.git");
+  system("cd ~/IP-Tracer && sh install");
+  logo();
+  echo "\n\033[01;32m IP-Tracer updated !!!\033[01;37m\n";
+  sleep(1);
+  menu();
+}
+
 function menu() {
   logo();
   echo "   \033[01;32m[ \033[01;37m1 \033[01;32m] \033[01;33mTrack IP Address.\n";
   echo "   \033[01;32m[ \033[01;37m2 \033[01;32m] \033[01;33mTrack Your IP Address.\n";
   echo "   \033[01;32m[ \033[01;37m3 \033[01;32m] \033[01;33mAbout us.\n";
   echo "   \033[01;32m[ \033[01;37m4 \033[01;32m] \033[01;33mHelp.\n";
+  echo "   \033[01;32m[ \033[01;37m5 \033[01;32m] \033[01;33mUpdate IP-Tracer.\n";
   echo "   \033[01;32m[ \033[01;37mx \033[01;32m] \033[01;33mExit \n\n";
   $prompt="  \033[0;32m\033[04mIP-Tracer\033[00m >>\033[01;37m ";
   echo $prompt;
   $inp = readline('');
-  if ($inp=="x"){
+  if ($inp=="x") {
     echo "\n\033[01;31m  Exiting .......\033[00m\n";
     sleep(1);
     echo "\033[01;32m  By ....... :)\n\n\033[00m";
@@ -65,6 +79,8 @@ function menu() {
     About();
   } else if ($inp=="4") {
     help();
+  } else if ($inp=="5") {
+    upd();
   } else {
     echo "\n  \033[01;31mErr : Invalid Command \033[01;32m'$inp'\033[00m";
     sleep(2);
