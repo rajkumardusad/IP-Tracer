@@ -8,7 +8,7 @@ IP-Tracer is use to track ip address. IP-Tracer is developed for linux and andro
 
 *`apt install git -y`
 
-*`git clone `
+*`git clone https://github.com/Rajkumrdusad/IP-Tracer.git`
 
 *`cd IP-Tracer`
 
