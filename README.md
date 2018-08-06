@@ -10,22 +10,24 @@ IP-Tracer is use to track ip address. IP-Tracer is developed for linux and andro
 
 # How to install IP-Tracer ?
 
-*`apt update`
+* `apt update`
 
-*`apt install git -y`
+* `apt install git -y`
 
-*`git clone https://github.com/Rajkumrdusad/IP-Tracer.git`
+* `git clone https://github.com/Rajkumrdusad/IP-Tracer.git`
 
-*`cd IP-Tracer`
+* `cd IP-Tracer`
 
-*`chmod +x install`
+* `chmod +x install`
 
-*`sh install` or `./install`
+* `sh install` or `./install`
 
 <br><br>
 
 # How to use IP-Tracer
 
 * `ip-tracer -m` to track your own ip address.
+
 * `ip-tracer -t target-ip` to track other's ip address.
+
 * `ip-tracer` for more information.
