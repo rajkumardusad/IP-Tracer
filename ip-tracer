@@ -1,0 +1,18 @@
+# input validator and help
+case "$1" in
+	-m)
+	    php ~/.IP-Tracer/tracem.php
+	    ;;
+	-t)
+       case "$2" in
+         *)
+	       cd ~/.IP-Tracer && echo $2>ip.txt
+          cd ~/.IP-Tracer && php traceip.php
+         ;;
+      esac
+       ;;
+	*)
+	    php ~/.IP-Tracer/IP-Tracer.php
+	    exit
+	    ;;
+esac
