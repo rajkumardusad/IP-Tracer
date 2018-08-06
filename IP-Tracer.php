@@ -32,7 +32,7 @@ function About() {
          \033[01;33mDeveloped By \033[01;37m:- \033[01;36mRajkumar Dusad
          \033[01;33mPowered By \033[01;37m:- \033[01;36mAex Software's
 
- \033[01;33mIP-Tracer\033[01;32m is use \033[01;36mip-api \033[01;32mto retrive any ip address information. Our system will automatically ban any IP addresses doing over 150 requests per minute.\033[00m
+ \033[01;33mIP-Tracer\033[01;32m is use \033[01;36mip-api \033[01;32mto retrieve any ip address information. Our system will automatically ban any IP addresses doing over 150 requests per minute.\033[00m
 
 
 EOL;
