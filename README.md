@@ -28,6 +28,6 @@ IP-Tracer is use to track ip address. IP-Tracer is developed for linux and andro
 
 * `ip-tracer -m` to track your own ip address.
 
-* `ip-tracer -t target-ip` to track other's ip address.
+* `ip-tracer -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
 
 * `ip-tracer` for more information.
