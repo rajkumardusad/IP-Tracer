@@ -1,6 +1,6 @@
 # What is IP-Tracer ?
 
-IP-Tracer is use to track ip address. IP-Tracer is developed for linux and android terminal like Termux and GNURoot Debian. you can retrive any ip information using IP-Tracer. IP-Tracer use ip-api to track ip address.
+IP-Tracer is use to track ip address. IP-Tracer is developed for linux and android terminal like Termux and GNURoot Debian. you can retrieve any ip address information using IP-Tracer. IP-Tracer use ip-api to track ip address.
 
 <br>
 <p align="center">
