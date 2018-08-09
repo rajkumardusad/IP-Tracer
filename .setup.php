@@ -4,12 +4,17 @@ class set {
     system("rm -rf ~/.IP-Tracer && rm -rf /data/data/com.termux/files/usr/bin/ip-tracer && rm -rf /usr/bin/ip-tracer");
     system("sudo rm -rf ~/.IP-Tracer && sudo rm -rf /usr/bin/ip-tracer");
     system("mv -v ip-tracer /data/data/com.termux/files/usr/bin/");
-    system("mv -v ip-tracer /usr/bin/ && sudo mv -v ip-tracer /usr/bin/");
+    system("mv -v ip-tracer /usr/bin/");
+    system("sudo mv -v ip-tracer /usr/bin/");
     system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer");
-    system("chmod +x /usr/bin/ip-tracer && sudo chmod +x /usr/bin/ip-tracer");
-    system("mkdir ~/.IP-Tracer && sudo mkdir ~/.IP-Tracer");
-    system("mv -v * *.* ~/.IP-Tracer && sudo mv -v *.* * ~/.IP-Tracer");
-    system("cd .. && rm -rf IP-Tracer && sudo rm -rf IP-Tracer");
+    system("chmod +x /usr/bin/ip-tracer");
+    system("sudo chmod +x /usr/bin/ip-tracer");
+    system("mkdir ~/.IP-Tracer");
+    system("sudo mkdir ~/.IP-Tracer");
+    system("mv -v * *.* ~/.IP-Tracer");
+    system("sudo mv -v *.* * ~/.IP-Tracer");
+    system("cd .. && rm -rf IP-Tracer");
+    system("cd .. && sudo rm -rf IP-Tracer");
   }
   function logo() {
     system("clear");
