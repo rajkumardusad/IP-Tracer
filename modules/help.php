@@ -15,9 +15,9 @@ function help() {
 
 
 EOL;
-  $prompt=" \033[0;32m\033[04mIP-Tracer\033[00m >>\033[01;37m ";
+  $prompt="\033[00m";
   echo $prompt;
-  $getact = readline('');
+  $getact = readline(' IP-Tracer >> ');
   menu();
 }
 ?>

@@ -3,13 +3,14 @@ function trac() {
   logo();
   $cyn="\033[01;36m";
   $yel="\033[01;33m";
-  $prompt="\n".$cyn." Enter IP : ".$yel;
+  $prompt="\n\033[00m";
   echo $prompt;
-  $ip = readline('');
+  $ip = readline('  Enter IP : ');
   $data = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
   $FCL="\033[01;33m";
   $MCL="\033[01;37m>\033[01;32m";
   $NCL="\033[00m";
+  date_default_timezone_set($data['timezone']);
   system("clear");
   echo <<<EOL
 \033[01;33m
@@ -33,6 +34,7 @@ EOL;
     echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
     echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
     echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
+    echo "\n ".$FCL."Date & Time   ".$MCL."   ".date("F j, Y, g:i a");
     echo "\n ".$FCL."Region code   ".$MCL."   ".$data['region'];
     echo "\n ".$FCL."Region        ".$MCL."   ".$data['regionName'];
     echo "\n ".$FCL."City          ".$MCL."   ".$data['city'];
@@ -50,9 +52,9 @@ EOL;
     echo "\033[01;31m Check your \033[01;33mNetwork connection\033[01;31m !!\033[00m\n";
     echo "\033[01;31m If you are \033[01;33mOnline\033[01;31m then check your \033[01;33mIP Address\033[01;31m !!\033[00m\n\n";
   }
-  $prompt=" \033[0;32m\033[04mIP-Tracer\033[00m >>\033[01;37m ";
+  $prompt="\033[00m";
   echo $prompt;
-  $getact = readline('');
+  $getact = readline(' IP-Tracer >> ');
   menu();
 }
 ?>
