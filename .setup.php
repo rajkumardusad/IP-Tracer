@@ -22,6 +22,10 @@ class set {
     system("chmod +x /usr/bin/ip-tracer trace");
     system("sudo chmod +x /usr/bin/ip-tracer trace");
 
+    system("chmod +x /data/data/com.termux/files/usr/bin/trace");
+    system("chmod +x /usr/bin/trace");
+    system("sudo chmod +x /usr/bin/trace");
+
     system("mkdir ~/.IP-Tracer");
     system("sudo mkdir ~/.IP-Tracer");
     system("mv -v * *.* .*.* ~/.IP-Tracer");
