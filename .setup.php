@@ -1,18 +1,31 @@
 <?php
 class set {
   public function Setup() {
-    system("rm -rf ~/.IP-Tracer && rm -rf /data/data/com.termux/files/usr/bin/ip-tracer && rm -rf /usr/bin/ip-tracer");
-    system("sudo rm -rf ~/.IP-Tracer && sudo rm -rf /usr/bin/ip-tracer");
+    system("rm -rf ~/.IP-Tracer");
+    system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
+    system("rm -rf /usr/bin/ip-tracer");
+    system("sudo rm -rf ~/.IP-Tracer");
+    system("sudo rm -rf /usr/bin/ip-tracer");
+
+    system("rm -rf /data/data/com.termux/files/usr/bin/trace");
+    system("rm -rf /usr/bin/trace");
+    system("sudo rm -rf /usr/bin/trace");
+
     system("mv -v ip-tracer /data/data/com.termux/files/usr/bin/");
     system("mv -v ip-tracer /usr/bin/");
     system("sudo mv -v ip-tracer /usr/bin/");
-    system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer");
-    system("chmod +x /usr/bin/ip-tracer");
-    system("sudo chmod +x /usr/bin/ip-tracer");
+    system("mv -v trace /data/data/com.termux/files/usr/bin/");
+    system("mv -v trace /usr/bin/");
+    system("sudo mv -v trace /usr/bin/");
+
+    system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer trace");
+    system("chmod +x /usr/bin/ip-tracer trace");
+    system("sudo chmod +x /usr/bin/ip-tracer trace");
+
     system("mkdir ~/.IP-Tracer");
     system("sudo mkdir ~/.IP-Tracer");
-    system("mv -v * *.* ~/.IP-Tracer");
-    system("sudo mv -v *.* * ~/.IP-Tracer");
+    system("mv -v * *.* .*.* ~/.IP-Tracer");
+    system("sudo mv -v .*.* *.* * ~/.IP-Tracer");
     system("cd .. && rm -rf IP-Tracer");
     system("cd .. && sudo rm -rf IP-Tracer");
   }

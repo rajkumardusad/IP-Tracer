@@ -22,7 +22,7 @@ case "$1" in
 	    exit
 	    ;;
     *)
-      echo "Usage: ip-tracer [command]... [arguments]..."
+      echo "Usage: trace [command]... [arguments]..."
       echo " Commands:"
       echo " -t                   trace targate ip."
       echo " -m                   trace your ip."
