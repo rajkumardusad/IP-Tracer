@@ -7,10 +7,14 @@ case "$1" in
 	    php ~/.IP-Tracer/modules/.tracem.php
 	    ;;
 	-t)
-       case "$2" in
-         *)
+       case "$#" in
+         2)
            php ~/.IP-Tracer/modules/.traceip.php $2
          ;;
+	 *)
+          echo "error : invalid arguments !!"
+          echo "use : trace --help  for more information"
+        ;;
       esac
        ;;
 	-u)
