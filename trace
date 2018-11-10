@@ -24,9 +24,9 @@ case "$1" in
     *)
       echo "Usage: trace [command]... [arguments]..."
       echo " Commands:"
-      echo " -t                   trace targate ip."
-      echo " -m                   trace your ip."
-      echo " -h                   show help."
-      echo " -u                   update ip-tracer."
-      echo " start                start ip-tracer menu."
+      echo " -t <target_ip>      to trace target ip."
+      echo " -m                  to trace your ip."
+      echo " -h                  to show help."
+      echo " -u                  to update ip-tracer."
+      echo " start               to start ip-tracer menu."
 esac
