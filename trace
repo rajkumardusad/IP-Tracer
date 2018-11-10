@@ -3,34 +3,40 @@
 # Date :- 10/10/2018
 # Powered By :- Aex Software's
 case "$1" in
-	-m)
-	    php ~/.IP-Tracer/modules/.tracem.php
-	    ;;
-	-t)
-       case "$#" in
-         2)
-           php ~/.IP-Tracer/modules/.traceip.php $2
-         ;;
-	 *)
-          echo "error : invalid arguments !!"
-          echo "use : trace --help  for more information"
-        ;;
-      esac
-       ;;
-	-u)
-	    php ~/.IP-Tracer/modules/.update.php
-	    exit
-	    ;;
-	start)
-	    php ~/.IP-Tracer/.IP-Tracer.php
-	    exit
-	    ;;
+  -m)
+    php ~/.IP-Tracer/modules/.tracem.php
+  ;;
+  -t)
+    case "$#" in
+    2)
+      php ~/.IP-Tracer/modules/.traceip.php $2
+    ;;
     *)
-      echo "Usage: trace [command]... [arguments]..."
-      echo " Commands:"
-      echo " -t <target_ip>      to trace target ip."
-      echo " -m                  to trace your ip."
-      echo " -h                  to show help."
-      echo " -u                  to update ip-tracer."
-      echo " start               to start ip-tracer menu."
+      echo "error : invalid arguments !!"
+      echo "use: trace -t <target_ip>"
+    ;;
+    esac
+  ;;
+  -u)
+    php ~/.IP-Tracer/modules/.update.php
+    exit
+  ;;
+  update)
+    php ~/.IP-Tracer/modules/.update.php
+    exit
+  ;;
+  start)
+    php ~/.IP-Tracer/.IP-Tracer.php
+    exit
+  ;;
+  *)
+    echo "Usage: trace [command]... [arguments]..."
+    echo " Commands:"
+    echo " -t <target_ip>      to trace target ip."
+    echo " -m                  to trace your own ip."
+    echo " -h                  to show help."
+    echo " -u                  to update ip-tracer."
+    echo " help                to show help."
+    echo " update              to update ip-tracer."
+    echo " start               to start ip-tracer menu."
 esac
