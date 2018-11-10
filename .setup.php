@@ -1,11 +1,10 @@
 <?php
 class set {
   public function Setup() {
-    system("rm -rf /data/data/com.termux/files/usr/share/IP-Tracer");
-    system("rm -rf /usr/share/IP-Tracer");
+    system("rm -rf ~/.IP-Tracer");
     system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
     system("rm -rf /usr/bin/ip-tracer");
-    system("sudo rm -rf /usr/share/IP-Tracer");
+    system("sudo rm -rf ~/.IP-Tracer");
     system("sudo rm -rf /usr/bin/ip-tracer");
 
     system("rm -rf /data/data/com.termux/files/usr/bin/trace");
@@ -27,12 +26,10 @@ class set {
     system("chmod +x /usr/bin/trace");
     system("sudo chmod +x /usr/bin/trace");
 
-    system("mkdir /data/data/com.termux/files/usr/share/IP-Tracer");
-    system("sudo mkdir /usr/share/IP-Tracer");
-    system("mkdir /usr/share/IP-Tracer");
-    system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP-Tracer");
-    system("sudo mv -v .*.* *.* * /usr/share/IP-Tracer");
-    system("mv -v .*. *.* * /usr/share/IP-Tracer");
+    system("mkdir ~/.IP-Tracer");
+    system("sudo mkdir ~/.IP-Tracer");
+    system("mv -v * *.* .*.* ~/.IP-Tracer");
+    system("sudo mv -v .*.* *.* * ~/.IP-Tracer");
     system("cd .. && rm -rf IP-Tracer");
     system("cd .. && sudo rm -rf IP-Tracer");
   }
