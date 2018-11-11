@@ -1,6 +1,7 @@
 <?php
 class set {
   public function Setup() {
+    // removing old files
     system("rm -rf ~/.IP-Tracer");
     system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
     system("rm -rf /usr/bin/ip-tracer");
@@ -10,14 +11,16 @@ class set {
     system("rm -rf /data/data/com.termux/files/usr/bin/trace");
     system("rm -rf /usr/bin/trace");
     system("sudo rm -rf /usr/bin/trace");
-
+    
+    // adding bin file
     system("mv -v ip-tracer /data/data/com.termux/files/usr/bin/");
     system("mv -v ip-tracer /usr/bin/");
     system("sudo mv -v ip-tracer /usr/bin/");
     system("mv -v trace /data/data/com.termux/files/usr/bin/");
     system("mv -v trace /usr/bin/");
     system("sudo mv -v trace /usr/bin/");
-
+    
+    // giving permission to bin file
     system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer trace");
     system("chmod +x /usr/bin/ip-tracer trace");
     system("sudo chmod +x /usr/bin/ip-tracer trace");
@@ -25,11 +28,14 @@ class set {
     system("chmod +x /data/data/com.termux/files/usr/bin/trace");
     system("chmod +x /usr/bin/trace");
     system("sudo chmod +x /usr/bin/trace");
-
+    
+    // copy files from IP-Tracer to .IP-Tracer directory.
     system("mkdir ~/.IP-Tracer");
     system("sudo mkdir ~/.IP-Tracer");
     system("mv -v * *.* .*.* ~/.IP-Tracer");
     system("sudo mv -v .*.* *.* * ~/.IP-Tracer");
+    
+    // removing IP-Tracer directory
     system("cd .. && rm -rf IP-Tracer");
     system("cd .. && sudo rm -rf IP-Tracer");
   }
