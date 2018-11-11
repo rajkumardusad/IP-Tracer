@@ -4,12 +4,12 @@
 # Powered By :- Aex Software's
 case "$1" in
   -m)
-    php ~/.IP-Tracer/modules/.tracem.php
+    php modules/.tracem.php
   ;;
   -t)
     case "$#" in
     2)
-      php ~/.IP-Tracer/modules/.traceip.php $2
+      php modules/.traceip.php $2
     ;;
     *)
       echo "error : invalid arguments !!"
@@ -18,15 +18,15 @@ case "$1" in
     esac
   ;;
   -u)
-    php ~/.IP-Tracer/modules/.update.php
+    php modules/.update.php
     exit
   ;;
   update)
-    php ~/.IP-Tracer/modules/.update.php
+    php modules/.update.php
     exit
   ;;
   start)
-    php ~/.IP-Tracer/.IP-Tracer.php
+    php .IP-Tracer.php
     exit
   ;;
   *)
