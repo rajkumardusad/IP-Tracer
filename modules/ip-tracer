@@ -14,7 +14,7 @@ case "$1" in
     ;;
     *)
       echo "error : invalid arguments !!"
-      echo "use: trace -t <target_ip>"
+      echo "use: ip-tracer -t <target_ip>"
     ;;
     esac
   ;;
@@ -54,7 +54,7 @@ case "$1" in
     ;;
     *)
       echo "error : invalid arguments !!"
-      echo "use: trace -t <target_ip>"
+      echo "use: ip-tracer -t <target_ip>"
     ;;
     esac
   ;;
