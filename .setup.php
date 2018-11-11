@@ -81,7 +81,7 @@ class set {
 EOL;
 
     if (file_exists("/usr/bin/ip-tracer")) {
-      echo "\n\n\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n\n";
+      echo "\n\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n";
       echo <<<EOL
 
 \033[01;37m -----------------------------------------------
