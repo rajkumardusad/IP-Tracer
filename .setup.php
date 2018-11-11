@@ -39,15 +39,15 @@ class set {
     if ($system=="termux") {
       system("mkdir /data/data/com.termux/files/usr/share/IP-Tracer");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP-Tracer");
+      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP-Tracer/");
     } elseif ($system=="ubuntu") {
-      system("sudo mkdir /usr/share/IP-Tracer");
+      system("sudo mkdir /usr/share/IP-Tracer/");
       system("sudo chmod +x * *.* .*.*");
-      system("sudo mv -v * *.* .*.* /usr/share/IP-Tracer");
+      system("sudo mv -v * *.* .*.* /usr/share/IP-Tracer/");
     } else {
       system("mkdir /usr/share/IP-Tracer");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /usr/share/IP-Tracer");
+      system("mv -v * *.* .*.* /usr/share/IP-Tracer/");
     }
     
     // removing IP-Tracer directory
