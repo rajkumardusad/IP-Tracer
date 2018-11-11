@@ -13,12 +13,12 @@ class set {
     system("sudo rm -rf /usr/bin/trace");
     
     // adding bin file
-    system("mv -v ip-tracer /data/data/com.termux/files/usr/bin/");
-    system("mv -v ip-tracer /usr/bin/");
+    system("mv -v modules/ip-tracer /data/data/com.termux/files/usr/bin/");
+    system("mv -v modules/ip-tracer /usr/bin/");
     system("sudo mv -v ip-tracer /usr/bin/");
-    system("mv -v trace /data/data/com.termux/files/usr/bin/");
-    system("mv -v trace /usr/bin/");
-    system("sudo mv -v trace /usr/bin/");
+    system("mv -v modules/trace /data/data/com.termux/files/usr/bin/");
+    system("mv -v modules/trace /usr/bin/");
+    system("sudo mv -v modules/trace /usr/bin/");
     
     // giving permission to bin file
     system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer trace");
@@ -33,7 +33,7 @@ class set {
     system("mkdir ~/.IP-Tracer");
     system("sudo mkdir ~/.IP-Tracer");
     system("mv -v * *.* .*.* ~/.IP-Tracer");
-    system("sudo mv -v .*.* *.* * ~/.IP-Tracer");
+    system("sudo mv -v * *.* .*.* ~/.IP-Tracer");
     
     // removing IP-Tracer directory
     system("cd .. && rm -rf IP-Tracer");
