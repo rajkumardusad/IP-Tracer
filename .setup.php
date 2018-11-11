@@ -2,6 +2,7 @@
 include("modules/system.php");
 class set {
   public function Setup() {
+    global $system;
     // removing old files
     if ($system=="termux") {
       system("rm -rf /data/data/com.termux/files/usr/share/IP-Tracer");
