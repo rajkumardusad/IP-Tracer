@@ -39,11 +39,11 @@ class un {
 EOL;
 
     if (file_exists("/usr/bin/ip-tracer")) {
-      echo "\n\033[01;31m      Sorry IP-Tracer is not removed !!!\033[00m\n";
+      echo "\n\033[01;31m        Sorry IP-Tracer is not removed !!!\033[00m\n";
     } else if(file_exists("/data/data/com.termux/files/usr/bin/ip-tracer")) {
-      echo "\n\033[01;31m      Sorry IP-Tracer is not removed !!!\033[00m\n";
+      echo "\n\033[01;31m        Sorry IP-Tracer is not removed !!!\033[00m\n";
     } else {
-      echo "\n\033[01;32m      IP-Tracer is uninstalled !!!\033[00m\n";
+      echo "\n\033[01;32m        IP-Tracer is uninstalled !!!\033[00m\n";
     }
   }
 }
