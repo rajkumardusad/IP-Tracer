@@ -31,7 +31,7 @@ case "$1" in
     exit
   ;;
   -rm)
-    php modules/.unistall.php
+    php modules/.uninstall.php
     exit
   ;;
   *)
