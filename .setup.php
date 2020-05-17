@@ -80,35 +80,19 @@ class set {
 \033[00m
 EOL;
 
-    if (file_exists("/usr/bin/ip-tracer")) {
+    if (file_exists("/usr/bin/ip-tracer") || file_exists("/data/data/com.termux/files/usr/bin/ip-tracer")) {
       echo "\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n";
       echo <<<EOL
 
-\033[01;37m -----------------------------------------------
+\033[01;37m ----------------------------------------------
 |         \033[01;36mcommand\033[01;37m        |        \033[01;36mUse\033[01;37m           |
- -----------------------------------------------
+ ----------------------------------------------
 | \033[01;32mtrace -m\033[01;37m               | \033[01;33mTrack your IP\033[01;37m        |
 | \033[01;32mtrace -t <traget-ip>\033[01;37m   | \033[01;33mTrack IP\033[01;37m             |
 | \033[01;32mtracer --help\033[01;37m          | \033[01;33mFor more information\033[01;37m |
- -----------------------------------------------
+ ----------------------------------------------
 
 \033[01;31mNote :- ip-api will automatically ban any IP addresses doing over 150 requests per minute.\033[00m
-
-
-EOL;
-    } else if(file_exists("/data/data/com.termux/files/usr/bin/ip-tracer")) {
-      echo "\n\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n";
-      echo <<<EOL
-
-\033[01;37m -----------------------------------------------
-|         \033[01;36mcommand\033[01;37m        |        \033[01;36mUse\033[01;37m           |
- -----------------------------------------------
-| \033[01;32mtrace -m\033[01;37m               | \033[01;33mTrack your IP\033[01;37m        |
-| \033[01;32mtrace -t <traget-ip>\033[01;37m   | \033[01;33mTrack IP\033[01;37m             |
-| \033[01;32mtrace --help\033[01;37m           | \033[01;33mFor more information\033[01;37m |
- -----------------------------------------------
-
-\033[01;33m Note :-\033[01;31m ip-api will automatically ban any IP addresses doing over 150 requests per minute.\033[00m
 
 
 EOL;
