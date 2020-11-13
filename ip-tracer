@@ -2,7 +2,7 @@
 # Tool Name :- IP-Tracer
 # Author :- Rajkumar Dusad
 # Date :- 10/10/2018
-# Powered By :- Aex Software's
+
 case "$1" in
   -m)
     php modules/.tracem.php
