@@ -25,7 +25,7 @@ system("clear");
 \033[00m
 EOL;
 
-if($data['status'] == 'success') {
+if(!empty($data['status']) && $data['status'] == 'success') {
 echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
 echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
 echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
