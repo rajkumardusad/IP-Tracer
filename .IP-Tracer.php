@@ -65,7 +65,7 @@ function menu() {
   if ($inp=="x" || $inp=="exit") {
     echo "\n\033[01;31m  Exiting .......\033[00m\n";
     sleep(1);
-    echo "\033[01;32m  By ....... :)\n\n\033[00m";
+    echo "\033[01;32m  Bye ....... :)\n\n\033[00m";
     exit();
   } else if ($inp=="1") {
     trac();
