@@ -1,6 +1,6 @@
-# Tool Name :- IP-Tracer
-# Author :- Rajkumar Dusad
-# Date :- 5/8/2018
+# Tool Name :- IP-Tracer-k3p1t1n9
+# Author :- k3p1t1n9
+# Date :- 22/5/2021
 
 if [ -e  /usr/lib/sudo ];then
   if [ ! -e /usr/bin/php ];then
